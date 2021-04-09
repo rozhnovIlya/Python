@@ -4,6 +4,7 @@ def my_sum ():
     ex = False
     while ex == False:
         number = input('Введите числа разделеные пробелом, для выхода нажмите Q - ').split()
+
         res = 0
         for el in range(len(number)):
             if number[el] == 'q' or number[el] == 'Q':

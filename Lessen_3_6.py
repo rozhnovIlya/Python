@@ -6,6 +6,11 @@
 
 def int_func():
     word = input('Введите слово или строку латинскими буквами')
-    return print(word.title())
+    ex = False
+    if word.isascii() != ex:
+        print(word.title())
+    else:
+        print('Вы ввели не латинские буквы')
+        int_func()
 int_func()
 
